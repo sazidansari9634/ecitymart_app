@@ -1,9 +1,12 @@
 import 'package:ecitymart_app/const/consts.dart';
 import 'package:ecitymart_app/const/lists.dart';
+import 'package:ecitymart_app/views/auth_screen.dart/signup_screen.dart';
 import 'package:ecitymart_app/widgets/app_logo_widget.dart';
 import 'package:ecitymart_app/widgets/bg_widget.dart';
 import 'package:ecitymart_app/widgets/custom_textfield.dart';
 import 'package:ecitymart_app/widgets/our_button.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -43,7 +46,9 @@ class LoginScreen extends StatelessWidget {
                  5.heightBox,
                  createNewAccout.text.color(fontGrey).make(),
                  5.heightBox,
-                 ourButton(color: lightGolden, title: signup, textColor: redColor, onPress: (){}).box.width(context.screenWidth - 50).make(),
+                 ourButton(color: lightGolden, title: signup, textColor: redColor, onPress: (){
+                  Get.to(()=> const SignUpScreen());
+                 }).box.width(context.screenWidth - 50).make(),
                  10.heightBox,
                  loginWith.text.color(fontGrey).make(),
                  5.heightBox,
