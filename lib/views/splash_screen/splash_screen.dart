@@ -1,10 +1,32 @@
  import 'package:ecitymart_app/const/consts.dart';
+import 'package:ecitymart_app/views/auth_screen.dart/login_screen.dart';
 import 'package:ecitymart_app/widgets/app_logo_widget.dart';
-import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
+
    const SplashScreen({super.key});
- 
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  //creating a method to change screen
+  changeScreen(){
+    Future.delayed(const Duration(seconds: 3), (){
+      //using getx
+      Get.to(()=>const LoginScreen());
+    });
+  }
+
+   @override
+  void initState() {
+    changeScreen();
+    super.initState();
+  }
+
    @override
    Widget build(BuildContext context) {
      return Scaffold(
@@ -30,4 +52,4 @@ class SplashScreen extends StatelessWidget {
           ),
      );
    }
- }
+}
