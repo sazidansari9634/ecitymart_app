@@ -1,11 +1,15 @@
 import 'package:ecitymart_app/const/consts.dart';
 import 'package:ecitymart_app/controllers/home_controller.dart';
+import 'package:ecitymart_app/views/cart_screen/cart_screen.dart';
+import 'package:ecitymart_app/views/category_screen/category_screen.dart';
+import 'package:ecitymart_app/views/homescreen/home_Screen.dart';
+import 'package:ecitymart_app/views/profile_Screen/profile_screen.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +24,10 @@ class HomeScreen extends StatelessWidget {
    ];
 
    var navBody = [
-    Container(color: Colors.blue,),
-    Container(color: Colors.amber,),
-    Container(color: Colors.purple,),
-    Container(color: Colors.cyan,),
+    const HomeScreen(),
+    const CategoryScreen(),
+    const CartScreen(),
+    const ProfileScreen()
    ];
     return Scaffold(
       body: Column(
