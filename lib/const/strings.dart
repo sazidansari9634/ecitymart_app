@@ -10,6 +10,7 @@ const name = "Name";
 const nameHint = "Sazid Ansari";
 const forgetPass = "Forget Password";
 const login = "Log in";
+const logout = "Log out";
 const signup = "Sign up";
 const createNewAccout = "create a new account";
 const loginWith = "Login in with";
@@ -59,3 +60,5 @@ returnpolicy = "Return Policy",
 productsyomaylike = "Products you may also like",
 supportpolicy = "Support Policy";
 
+// profile strings
+const wishlist = "My Wishlist", orders = "My Orders", messages = "Messages";

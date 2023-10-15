@@ -30,3 +30,5 @@ const categoriesImages = [
 ];
 
 const itemDetailButtonList = [video,reviews,returnpolicy,supportpolicy,searchanything];
+const profileButtonsList = [orders, wishlist, messages];
+const profileButtonsIcon = [icOrder, icWishlist, icMessages];
