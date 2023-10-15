@@ -1,3 +1,4 @@
+import 'package:ecitymart_app/const/colors.dart';
 import 'package:ecitymart_app/const/styles.dart';
 import 'package:ecitymart_app/views/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +18,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'pcitymart App',
       theme: ThemeData(
+
         scaffoldBackgroundColor: Colors.transparent,
-        appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
+        appBarTheme: const AppBarTheme(
+          // to set app bar icons color
+          iconTheme: IconThemeData(
+            color: darkFontGrey
+          ),
+          backgroundColor: Colors.transparent),
         fontFamily: regular
       ),
       home: const  SplashScreen(),
