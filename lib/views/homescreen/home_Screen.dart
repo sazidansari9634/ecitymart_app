@@ -184,7 +184,7 @@ class HomeScreen extends StatelessWidget {
                                 "\$600".text.color(redColor).fontFamily(bold).size(16).make(),
                                 10.heightBox
                               ],
-                            ).box.margin(const EdgeInsets.symmetric(horizontal: 12)).white.roundedSM.padding(const EdgeInsets.all(8)).make();
+                            ).box.margin(const EdgeInsets.symmetric(horizontal: 4)).white.roundedSM.padding(const EdgeInsets.all(12)).make();
                     })
                   ],
                 ),
